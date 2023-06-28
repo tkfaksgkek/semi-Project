@@ -112,7 +112,7 @@ public class rController {
 			URL address = new URL("https://kapi.kakao.com/v1/payment/ready");
 			HttpURLConnection connection = (HttpURLConnection) address.openConnection(); // 서버연결
 			connection.setRequestMethod("POST");
-			connection.setRequestProperty("Authorization", "KakaoAK 01325cb3fef89cd5fe1216fc3b62e83d"); // 어드민 키
+			connection.setRequestProperty("Authorization", "Kakao 어드민 키"); // 어드민 키
 			connection.setRequestProperty("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
 			connection.setDoOutput(true); // 서버한테 전달할게 있는지 없는지
 			String parameter = "cid=TC0ONETIME" // 가맹점 코드
